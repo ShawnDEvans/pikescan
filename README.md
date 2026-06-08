@@ -28,7 +28,8 @@ Note: Because this utility manipulates and injects raw network packets for parts
 
 ## Usage
 
-```usage: test4.py [-h] [-m {main,aggressive}] [-f FILE] [-t THREADS] [-w TIMEOUT] 
+```
+usage: pikescan.py [-h] [-m {main,aggressive}] [-f FILE] [-t THREADS] [-w TIMEOUT] 
                 [-g GROUPS] [-o OUTPUT] [-P HASH_FILE] [-e] [-v] [-d]
                 [--enc {DES,3DES,AES-128,AES-192,AES-256}]
                 [--hash {MD5,SHA1,SHA256,SHA384,SHA512}]
@@ -45,9 +46,8 @@ Note: Because this utility manipulates and injects raw network packets for parts
 * -e, --enum-transforms: Runs an exhaustive search matrix matching every combination of cipher, hash, and DH group instead of the default optimized profiles.
 * -v, --verbose: Enables internal tracking logs and target feedback.
 * -d, --debug-packet: Outputs verbose payload sizes and network interaction flags.
-*
 
 ### Example
 ```
-$ sudo python test4.py -m aggressive 192.168.122.12 --enc AES-128 --hash SHA1 --dh 1 -P target_hash.txt
+$ sudo python pikescan.py -m aggressive 192.168.122.12 --enc AES-128 --hash SHA1 --dh 1 -P target_hash.txt
 ```
