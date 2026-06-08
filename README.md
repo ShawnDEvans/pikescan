@@ -10,9 +10,8 @@ piKEscan is a high-performance, multi-threaded Python implementation of the clas
 * **Smart Identity Parsing:** Automatically detects and cleanly interprets both textual (`ID_FQDN`, `ID_KEY_ID`) and raw binary network identifiers (`ID_IPV4_ADDR`, `ID_IPV6_ADDR`).
 * **High-Integrity Hash Export:** Structurally formats captured handshake authentications directly into verified, crackable Hashcat signatures using the required `cky_r:cky_i` and `SAib` data sequences.
 * **Granular Transform Targeting:** Allows target probing using optimized matrices, exhaustive sets, or an explicit user-defined single transform definition.
-
-Note: Because this utility manipulates and injects raw network packets for parts of its Main Mode routines using Scapy, it requires root privileges (sudo) on Linux systems to interact with the raw socket layer.
 ---
+Note: Because this utility manipulates and injects raw network packets for parts of its Main Mode routines using Scapy, it requires root privileges (sudo) on Linux systems to interact with the raw socket layer.
 
 ## Installation
 
